@@ -25,7 +25,7 @@ And when I say "has bugs," I don't mean a couple of minor quirks.
 
 Some of them I know about, some show up from time to time, and some I don't even get a chance to write down.
 
-Found a problem? **Open an Issue.**
+Found a problem? [**Open an Issue.**](https://github.com/MetlaYT/TWM-hyperland/issues/new)
 
 I'll be glad for any information — even if a bug seems insignificant, it's better to report it than to leave it unnoticed.
 
