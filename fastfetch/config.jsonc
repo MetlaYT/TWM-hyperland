@@ -1,0 +1,112 @@
+//
+//    __          _    __     _       _
+//   / _|        | |  / _|   | |     | |
+//  | |_ __ _ ___| |_| |_ ___| |_ ___| |__
+//  |  _/ _` / __| __|  _/ _ \ __/ __| '_ \
+//  | || (_| \__ \ |_| ||  __/ || (__| | | |
+//  |_| \__,_|___/\__|_| \___|\__\___|_| |_|
+//
+
+//  Fastfetch configuration file
+//  Customized for a clean, framed system information display
+
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+
+  "logo": {
+    "color": { "1": "blue", "2": "black" },
+    /* Automatically picks a random PNG from the fastfetch/png folder */
+    "source": "$(find \"${XDG_CONFIG_HOME:-$HOME/.config}/fastfetch/png/\" -name \"*.png\" | shuf -n 1)",
+    "padding": {
+      "top": 4,
+      "right": 5,
+    },
+    "height": 18,
+  },
+
+  "display": {
+    "separator": " ▸ ",
+  },
+
+  "modules": [
+    /* Header with custom nickname */
+    {
+      "type": "custom",
+      "format": "{#31}------------------>World Machine<------------------",
+    },
+    {
+      "type": "custom",
+      "format": "{#37}╔══════════════════════════════════════════════════╗",
+    },
+
+    /* Media and Network info */
+    {
+      "type": "player",
+      "key": "{#35}╭─ Song",
+    },
+    "break",
+
+    /* System & OS Info */
+    {
+      "type": "os",
+      "key": "{#32} ╭─",
+      "format": "{3} {12}",
+    },
+    {
+      "type": "kernel",
+      "key": "{#32} ├─",
+    },
+    {
+      "type": "packages",
+      "key": "{#32} ├─",
+    },
+    {
+      "type": "uptime",
+      "key": "{#32} ├─",
+    },
+    {
+      "type": "shell",
+      "key": "{#32} ╰─",
+    },
+    "break",
+
+    {
+      "type": "cpu",
+      "key": "{#34} ├─",
+      "temp": true,
+    },
+    {
+      "type": "gpu",
+      "key": "{#34} ├─",
+      "temp": true,
+    },
+    {
+      "type": "memory",
+      "key": "{#34} ├─",
+      "format": "{} / {}",
+    },
+    {
+      "type": "disk",
+      "key": "{#34} ├─",
+      "format": "{} / {}",
+    },
+    "break",
+
+    /* Desktop Environment info */
+    {
+      "type": "wm",
+      "key": "{#33} ╭─",
+    },
+    {
+      "type": "terminal",
+      "key": "{#33} ├─",
+    },
+
+    /* Footer & Color Palette */
+    {
+      "type": "custom",
+      "format": "{#37}╚════════════════════════🟕═════════════════════════╝",
+    },
+    "break",
+  ],
+}
