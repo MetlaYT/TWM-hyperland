@@ -1,9 +1,8 @@
 # TWM Rice on Hyprland
 
-&gt; [!WARNING]
-&gt; ## WIP — Work in Progress
-&gt;
-&gt; [RU](https://github.com/MetlaYT/TWM-hyperland/blob/main/RUADME.md) | [EN](https://github.com/MetlaYT/TWM-hyperland/blob/main/README.md)
+[!WARNING]
+## WIP — Work in Progress
+[RU](https://github.com/MetlaYT/TWM-hyperland/blob/main/RUADME.md) | [EN](https://github.com/MetlaYT/TWM-hyperland/blob/main/README.md)
 
 Этот rice ещё **не доделан** и находится в активной разработке.
 
